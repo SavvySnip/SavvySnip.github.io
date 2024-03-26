@@ -1,0 +1,276 @@
+/* Resetting default margin and padding */
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Setting background color */
+body {
+    background-color: #0f1118;
+}
+
+/* Example styling for a container */
+.container {
+    max-width: 1200px;
+    /* Adjust as needed */
+    margin: 0 auto;
+    /* Centering the container */
+    padding: 20px;
+    /* Adding padding inside the container */
+    color: #bcbcbc;
+    /* Example text color */
+}
+
+/* Heading styles */
+.heading {
+    color: #D3D3D3;
+    /* Light grey color */
+    font-weight: bold;
+    /* Bold font weight */
+    font-size: 2rem;
+    /* Large font size, adjust as needed */
+    margin-bottom: 20px;
+    /* Adding some space below the heading */
+    font-family: 'Roboto', sans-serif;
+    font-weight: 550;
+    font-size: 3rem;
+    letter-spacing: 1px;
+}
+
+/* Custom CSS */
+.navbar-nav .nav-item {
+    margin-left: 10px;
+    /* Adjust spacing between items */
+}
+
+
+
+/* Custom CSS */
+.navbar-brand {
+    padding-top: 10px;
+    color: #D3D3D3;
+}
+
+.navbar-nav button {
+    margin-top: -4%;
+    background-color: #D3D3D3 !important;
+    transition: 0.3s ease;
+}
+
+.navbar-nav button:hover {
+    background-color: #838383 !important;
+}
+
+.navbar-nav .nav-item {
+    padding-top: 10px;
+}
+
+.body-text {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+h1 {
+    margin-top: 25%;
+    width: 90%;
+    padding: 2%;
+    font-weight: 400;
+}
+
+p {
+    margin-left: 2%;
+    color: rgb(162, 162, 162);
+    width: 70%;
+    padding: 1%;
+    letter-spacing: 1px;
+    line-height: 1.5em;
+}
+
+.subbtn {
+    margin-left: 3%;
+    margin-top: 1%;
+    background-color: transparent;
+    /* Transparent background */
+    color: #c8c7c7;
+    border: 1px solid;
+    border-radius: 10px;
+    border-image: linear-gradient(to right, rgba(255, 0, 0, 0.5), rgba(0, 255, 0, 0.5), rgba(0, 0, 255, 0.5));
+    /* Same gradient as the box-shadow colors */
+    border-image-slice: 1;
+}
+
+.navbar {
+    position: relative;
+    /* Set the position to relative */
+}
+
+.subbtn:hover {
+    color: #c8c7c7;
+    z-index: 100;
+}
+
+.gradient-glow {
+    position: fixed;
+    top: 85%;
+    right: -400px;
+    /* Move it off the page to the right */
+    transform: translateY(-50%);
+    width: 400px;
+    /* Increase the size of the glow */
+    height: 400px;
+    /* Increase the size of the glow */
+    border-radius: 50%;
+    /* Make it circular */
+    box-shadow:
+        0 0 100px 100px rgba(255, 0, 0, 0.5),
+        0 0 200px 200px rgba(0, 255, 0, 0.5),
+        0 0 300px 300px rgba(0, 0, 255, 0.5);
+    /* Vibrant gradient glow effect */
+    pointer-events: none;
+    /* Ensure the glow doesn't interfere with interaction */
+    z-index: -9999;
+    /* Ensure the glow is on top of other content */
+}
+
+.gradient-glow-left {
+    position: fixed;
+    top: 85%;
+    right: 1450px;
+    /* Move it off the page to the right */
+    transform: translateY(-50%);
+    width: 400px;
+    /* Increase the size of the glow */
+    height: 400px;
+    /* Increase the size of the glow */
+    border-radius: 50%;
+    /* Make it circular */
+    box-shadow:
+        0 0 100px 100px rgba(255, 0, 0, 0.5),
+        0 0 200px 200px rgba(0, 255, 0, 0.5),
+        0 0 300px 300px rgba(0, 0, 255, 0.5);
+    /* Vibrant gradient glow effect */
+    pointer-events: none;
+    /* Ensure the glow doesn't interfere with interaction */
+    z-index: -9999;
+    /* Ensure the glow is on top of other content */
+}
+
+.container-main {
+    margin-top: -5%;
+    margin-left: 15%;
+}
+
+.scroll-down {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9999;
+}
+
+.scroll-link {
+    display: block;
+    text-align: center;
+    font-size: 24px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.scroll-link i {
+    margin: 0 auto;
+}
+
+.scroll-link:hover {
+    color: #fff;
+    /* Change color on hover */
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    /* Allow items to wrap to the next row */
+    justify-content: space-between;
+    /* Distribute items evenly along the main axis */
+    align-content: space-between;
+    /* Distribute items evenly along the cross axis */
+    border-radius: 10px;
+    margin-top: 30%;
+    min-height: 90vh;
+    /* Set a minimum height to ensure it fills the container */
+    backdrop-filter: blur(10px);
+    /* Adjust the blur amount as needed */
+    background-color: rgba(255, 255, 255, 0.3);
+    /* Adjust the background color and opacity */
+    padding: 2%;
+}
+
+h2 {
+    margin-left: 5%;
+}
+
+.btn-apple {
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-apple:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+
+.apple-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border: 0.5px solid rgb(147, 147, 147);
+    margin-top: 3%;
+    height: 210px;
+    border-radius: 10px;
+  
+    
+}
+
+.ending {
+    margin-top: 12%;
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    padding: 3%;
+}
+
+.apple-item i {
+    font-size: 2.5em; /* Make the icon bigger */
+    margin-bottom: 10px; /* Add some spacing between the icon and text */
+}
+
+.apple-item p {
+    text-align: center;
+    color: white;
+    opacity: 0.7;
+}
+
+
+@media screen and (max-width: 768px) {
+    .container-main {
+        margin-top: 0%;
+    }
+
+    .gradient-glow {
+        right: -500px;
+    }
+}

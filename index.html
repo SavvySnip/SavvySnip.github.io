@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snip Code</title>
+
+    <!-- Linking Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- Linking Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- Linking your custom CSS file -->
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: transparent;">
+            <div class="container-fluid">
+                <h3 class="navbar-brand .heading" href="#"><img src="./assets/logo.svg">Savvy Snip</h3>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link body-text" href="mailto:info.codedelic@gmail.com" style="color: #D3D3D3;">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://tally.so/r/woyKPO">
+                                <button type="button" class="btn btn-light body-text">Join Waitlist</button>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Your content goes here -->
+        <div class="container-main">
+            <h1 class="heading" id="heading">Store your code snippets for quick access.</h1>
+            <p class="body-text" id="sub"> Say goodbye to repetitive Google searches. Store your snippets in our app for
+                instant access, saving you time and keeping your workflow seamless.</p>
+            <button type="button" class="btn body-text subbtn" disabled>Releasing on the ios App Store Soon</button>
+        </div>
+
+
+        <div class="gradient-glow"></div>
+
+        <div class="gradient-glow-left"></div>
+
+        <div class="scroll-down">
+            <div href="#content" class="scroll-link">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+
+        <div class="grid" id="content">
+            <h2>Features</h2>
+            <a class="nav-link" href="https://tally.so/r/woyKPO">
+                <button type="button" class="btn btn-apple body-text">Join Waitlist</button>
+            </a>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="apple-item">
+                            <i class="fas fa-save"></i>
+                            <p>Store and organize your code snippets for easy access.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="apple-item">
+                            <i class="fas fa-search"></i>
+                            <p>Instantly find your code snippets with a powerful search feature.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="apple-item">
+                            <i class="fas fa-share-alt"></i>
+                            <p>Share your code snippets effortlessly with colleagues and friends.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="apple-item">
+                            <i class="fas fa-folder"></i>
+                            <p>Create custom categories to organize your code snippets effectively.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="apple-item">
+                            <i class="fab fa-markdown"></i>
+                            <p> Write and store your code snippets with Markdown formatting.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="apple-item">
+                            <i class="fas fa-moon"></i>
+                            <p>Enjoy coding in low-light conditions with a sleek dark mode interface.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="ending">
+        <h2 id="end">Easiest Way to boost your coding efficiency<br>and take your projects to the next level</h2>
+        <a href="https://tally.so/r/woyKPO" target="_blank">
+        <button type="button" class="btn btn-apple body-text">Join Waitlist</button>
+        </a>
+        </div>
+
+    </div>
+    </div>
+
+
+    <!-- Linking GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+
+    <!-- Bootstrap JS bundle (optional, for Bootstrap components that require JS) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        // GSAP animation
+        gsap.fromTo("#heading", { opacity: 0, translateY: 20 }, { opacity: 1, translateY: 0, duration: 1, delay: 0.5 });
+        gsap.fromTo("#sub", { opacity: 0, translateY: 20 }, { opacity: 1, translateY: 0, duration: 1, delay: 0.6 });
+
+        // Floating animation
+        gsap.to(".scroll-down", {
+            y: -10, // Adjust the floating distance as needed
+            duration: 1,
+            repeat: -1, // Repeat indefinitely
+            yoyo: true, // Reverse the animation
+            ease: "sine.inOut" // Use a smooth easing function
+        });
+
+        // Listen for the scroll event
+        window.addEventListener('scroll', function () {
+            // Get the current scroll position
+            const scrollY = window.scrollY;
+
+            // Use GSAP to smoothly scroll to the new position
+            gsap.to(window, {
+                scrollTo: { y: scrollY },
+                duration: 0.5, // Adjust the duration as needed
+                ease: 'power2.inOut' // Use an easing function for smooth animation
+            });
+        });
+    </script>
+</body>
+
+</html>
